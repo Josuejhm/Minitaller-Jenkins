@@ -58,10 +58,23 @@ docker compose run --rm develop
 Estos pasos levantan Jenkins localmente con Docker y ejecutan el `Jenkinsfile`
 del repositorio.
 
+### 0. Hacer fork del repositorio (participantes del taller)
+
+Cada participante debe trabajar sobre su propia copia del repositorio para que
+sus commits disparen su propio pipeline sin interferir con los demas.
+
+1. Entrar al repositorio original en GitHub.
+2. Hacer clic en el boton `Fork` (esquina superior derecha).
+3. Seleccionar tu cuenta como destino y confirmar.
+
+A partir de aqui, usa la URL de **tu fork** en todos los pasos siguientes.
+
 ### 1. Clonar el repositorio
 
+Clonar **tu fork** (no el repo original):
+
 ```bash
-git clone <URL_DEL_REPO>
+git clone <URL_DE_TU_FORK>
 cd Minitaller-Jenkins
 ```
 
@@ -111,7 +124,7 @@ En la configuracion del job:
 ```text
 Definition: Pipeline script from SCM
 SCM: Git
-Repository URL: <URL_DEL_REPO>
+Repository URL: <URL_DE_TU_FORK>
 ```
 ![git_config](img/git_config.png)
 ```
