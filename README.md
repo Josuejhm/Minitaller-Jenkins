@@ -15,9 +15,7 @@ herramienta de automatizacion para procesos de integracion y entrega continua.
 
 ## Vista previa
 
-Agrega aqui una captura del pipeline ejecutado en Jenkins:
-
-![Vista previa del pipeline de Jenkins](docs/jenkins-pipeline-preview.png)
+![Pipeline](img/pipeline.png)
 
 ## Ejecutar localmente
 
