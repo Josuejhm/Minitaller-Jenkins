@@ -1,5 +1,5 @@
-pipeline {
-  agent none
+pipeline { 
+  agent none 
 
   options {
     skipDefaultCheckout(true)
